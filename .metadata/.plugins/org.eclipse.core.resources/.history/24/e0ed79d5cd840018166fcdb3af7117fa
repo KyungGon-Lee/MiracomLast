@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+회원목록<br>
+
+
+<table>
+<tr>
+<c:forEach var="mem" items="${lists}">
+	id: ${mem.id} <br	>
+</c:forEach>
+</table>
+
+</body>
+</html>

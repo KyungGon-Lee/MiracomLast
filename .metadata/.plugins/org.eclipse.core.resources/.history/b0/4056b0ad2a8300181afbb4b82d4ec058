@@ -1,0 +1,10 @@
+package com.spring.miracom;
+
+public class CarTestService {
+	public CarTestService(Car car){
+		
+	}
+
+
+
+}

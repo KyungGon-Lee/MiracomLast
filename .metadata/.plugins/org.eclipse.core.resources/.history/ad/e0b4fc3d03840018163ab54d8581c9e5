@@ -1,0 +1,43 @@
+package com.miracom.spring;
+
+import java.util.HashMap;
+import java.util.List;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
+
+public class MemberDao {
+	
+	private SqlSessionTemplate sqlSession;
+	
+	public MemberDao(SqlSessionTemplate sqlSession) {
+		 this.sqlSession = sqlSession;
+	 }
+
+    public List<Member> getMembers() {
+    	return  sqlSession.selectList("membermapper.getMembers");
+    }	    
+    
+    public int insert(Member m) {
+    	return sqlSession.insert("membermapper.insertMember", m);
+    }
+
+    public int update(Member m) {
+    	return sqlSession.update("membermapper.updateMember", m);
+    }
+	
+    
+    public int delete(String id) {
+    	return sqlSession.delete("membermapper.deleteMember", id);
+    }
+    public int login(String id, String pwd) {
+    	HashMap map = new HashMap();
+		map.put("id", id);
+		map.put("pwd", pwd);    	
+    	return sqlSession.selectOne("membermapper.login", map);
+    }
+    
+}

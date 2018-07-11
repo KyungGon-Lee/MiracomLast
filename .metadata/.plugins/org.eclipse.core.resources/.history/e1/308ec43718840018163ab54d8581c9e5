@@ -1,0 +1,13 @@
+package com.spring.miracom;
+
+public class Computation {
+	
+	public static int count = 0;
+	public long fibo(int n) {
+		count++;
+		System.out.println("called fibo");
+		Long start = System.currentTimeMillis()
+		if (n <= 1) return n;
+		else return fibo(n-1) + fibo(n-2);
+	}
+}

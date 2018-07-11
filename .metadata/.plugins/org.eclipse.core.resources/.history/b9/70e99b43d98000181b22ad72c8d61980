@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+  <head>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <table>
+      <tr>
+    <iframe src="youknowme.html" scrolling="yes" frameBorder="0" width="50%" height="700"></iframe>
+    <iframe src="chatframe2.html" scrolling="yes" frameBorder="0" width="50%" height="700"></iframe>
+  </tr>
+    </table>
+
+    <%
+    if(session.getAttribute("id") == null){
+    	out.println("<script>alert('no~~~');location.href='home.html;'</script>");
+    }
+	%>
+	<%=session.getAttribute("id")%>~님이 로그인했습니다. <a href=logout.jsp> logout</a>
+	
+    <a href="youknowme.html" >you know me</a>
+    <a href="chatframe2.html">chat</a>
+
+  </body>

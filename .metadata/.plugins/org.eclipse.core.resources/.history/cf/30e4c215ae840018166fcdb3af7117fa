@@ -1,0 +1,7 @@
+package com.spring.miracom;
+
+public class Member {
+	String id;
+	
+
+}

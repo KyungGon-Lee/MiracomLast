@@ -1,0 +1,13 @@
+package com.spring.miracom;
+public class PrinterService {
+	ArrayList<Printer> p = new ArrayList<Printer>();
+	p.add(new LGPrinter());
+	p.add(new SSPrinter());
+	svr.setPrinters(p);
+	svr.print("hello~~~~");
+	
+	
+	PrinterService svr = new PrinterService();
+	svr.print("hello~~~~");
+	
+}

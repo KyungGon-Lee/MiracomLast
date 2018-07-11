@@ -1,0 +1,32 @@
+1531105785353	Rename compilation unit 'HelloSpring.java'
+1531105882186	Rename type 'HelloSpringTestMain'
+1531105923005	Delete element
+1531108281773	Rename type 'CarTestService'
+1531108296103	Rename compilation unit 'CarService.java'
+1531108321276	Rename type 'CarTestServiceTest'
+1531114408567	Delete element
+1531114456055	Delete element
+1531116342818	Delete element
+1531122426292	Delete element
+1531124385235	Copy file
+1531184439141	Copy file
+1531184444173	Rename resource 'mybatix.xml'
+1531184697098	Copy compilation unit
+1531200561280	Rename resource 'mybatis.xml'
+1531200690241	Delete element
+1531201006312	Rename resource 'MemberDao.java'
+1531201009597	Move file
+1531201053630	Rename type 'MemberDAO'
+1531201057265	Rename compilation unit 'MemberDao1.java'
+1531201096210	Rename resource 'pom.xml'
+1531201101932	Rename resource 'pom2.xml'
+1531201359505	Delete element
+1531201567563	Delete element
+1531201593945	Delete element
+1531201933694	Delete element
+1531201943150	Rename type 'MemberDao'
+1531201948106	Rename type 'MemberDAO3'
+1531267039470	Move compilation unit
+1531267046576	Move compilation unit
+1531267097253	Rename package 'com.spring.miracom.spring'
+1531292459517	Copy compilation unit

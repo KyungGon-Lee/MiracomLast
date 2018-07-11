@@ -1,0 +1,9 @@
+package com.spring.miracom;
+
+public class Tire {
+	private String name;
+	public Tire() {
+		
+	}
+
+}

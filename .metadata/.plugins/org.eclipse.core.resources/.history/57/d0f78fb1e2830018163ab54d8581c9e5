@@ -1,0 +1,9 @@
+package com.spring.miracom;
+
+public class MemberVO {
+	String id;
+	String pwd;
+	String name;
+	String gender;
+
+}

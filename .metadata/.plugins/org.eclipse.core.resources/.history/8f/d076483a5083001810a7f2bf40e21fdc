@@ -1,0 +1,20 @@
+package com.spring.miracom;
+
+public interface Printer{
+	public void print() {
+		
+	}
+	
+	public void setPrinter(String printer) {
+		this.printer = printer;
+	}
+	public String getInfo() {
+		return "[" + printer + "]" + "헬로";		
+	}
+	
+	
+}
+
+	
+
+

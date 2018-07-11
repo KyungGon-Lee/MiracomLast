@@ -1,0 +1,12 @@
+package com.spring.miracom;
+
+public class Member {
+	String id;
+	String pwd;
+	String name;
+	String gender;
+	String hobby;
+	
+	
+
+}

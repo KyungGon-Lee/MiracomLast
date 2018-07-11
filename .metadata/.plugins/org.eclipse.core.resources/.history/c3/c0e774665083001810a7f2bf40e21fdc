@@ -1,0 +1,8 @@
+package com.spring.miracom;
+
+public class LGPrinter {
+	public void print(String str) {
+		System.out.println("[SS]" + str);
+	}
+
+}

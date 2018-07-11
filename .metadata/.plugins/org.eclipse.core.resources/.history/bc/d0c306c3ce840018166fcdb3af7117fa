@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<h1> <p>회원목록</p><br>
+<table border=3>
+<c:forEach var="mem" items="${lists}">
+	<tr>
+		<td>id : ${mem.id}  </td>
+		<td>name : ${mem.name}  </td>
+		<td>gender : ${mem.gender}  </td>
+		<td><a href=deletemember.do?id=${mem.id}> 삭제 </a></td>
+	</tr>
+</c:forEach>
+</table>
+</h1>
+</body>
+</html>

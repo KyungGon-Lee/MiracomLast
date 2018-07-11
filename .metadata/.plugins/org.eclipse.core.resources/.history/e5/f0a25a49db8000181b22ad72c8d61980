@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta charset=UTF-8>
+<head>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        function move(){
+          for(i=0;i<5;i++){
+            var x = Math.random() * 400 + 40;
+            var y = Math.random() * 400 + 40;
+            var xy = ["100", "200", "300", "400", "500"];
+            var xys = xy[i];
+            var imgs = ["msg1", "msg2", "msg3", "msg4", "msg5"];
+            var img = imgs[i];
+            var ox = Math.random();
+            // $("img".css).each()
+            $("img").css({left:xy, top:y, position: "absolute"});
+            
+            $(img).html((Math.random))
+              if(ox > 0.5){
+                document.getElementById(img).src = "1.png"
+                document.getElementById(img).value = "ㅜㅜ"
+              }else{
+                document.getElementById(img).src = "3.jpg"
+                document.getElementById(img).value = "피카츄!!!"
+              }
+          }
+        };
+        setInterval(move, 1500);
+
+        $(img).click( function(){
+          alert(this.value);
+        });
+         //여기선 "red" 이렇게 해줘야함 왜냐하면 밸류가오는자리이기 때문에
+         // ""안하면 레드라고하는 글로벌 변수로 인식함
+
+      });
+    </script>
+</head>
+<body>
+
+    <img id=msg1 name=img width="500" height="500">
+    <img id=msg2 name=img width="500" height="500">
+    <img id=msg3 name=img width="500" height="500">
+    <img id=msg4 name=img width="500" height="500">
+    <img id=msg5 name=img width="500" height="500">
+</body>
+
+</html>

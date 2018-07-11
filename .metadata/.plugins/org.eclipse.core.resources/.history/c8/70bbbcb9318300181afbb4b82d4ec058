@@ -1,0 +1,9 @@
+package com.spring.miracom;
+
+public class HanTire extends Tire{
+	public Hantire(String name) {
+		super(name);
+	}
+	
+
+}

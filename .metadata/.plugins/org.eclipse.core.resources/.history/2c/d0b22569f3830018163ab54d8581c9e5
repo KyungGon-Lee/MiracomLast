@@ -1,0 +1,12 @@
+package com.spring.miracom;
+
+public class MemberService {
+	private MemberDAO dao;
+	public void insert(MemberVO member) {
+		dao.insert(member);
+	}
+	public MemberVO read(String id) throws Exception{
+		return dao.read(id);
+	}
+
+}

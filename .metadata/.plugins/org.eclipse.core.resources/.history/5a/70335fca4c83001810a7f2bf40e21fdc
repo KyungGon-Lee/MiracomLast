@@ -1,0 +1,18 @@
+package com.spring.miracom;
+
+public class Printer {
+	String name;
+	String brand;
+	public Printer(String name, String brand) {
+		this.name = name;
+		this.brand = brand;
+	}
+	public String getInfo() {
+		return "[" + name + "]" + "헬로";		
+	}
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	
+	
+}

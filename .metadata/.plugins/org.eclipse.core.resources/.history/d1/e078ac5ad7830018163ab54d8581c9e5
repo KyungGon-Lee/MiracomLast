@@ -1,0 +1,9 @@
+package com.spring.miracom;
+
+public class JDBCTest {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

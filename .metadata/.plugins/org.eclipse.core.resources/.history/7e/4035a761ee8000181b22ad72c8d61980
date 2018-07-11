@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	import="java.sql.*, java.util.*"
+    pageEncoding="utf-8"%>
+
+
+
+<form action="editmember.jsp" method="get"> 
+아이디 : <input type="text" name="id" readonly value=<%=id%>><br/>
+패스워드 : <input type="password" name="pwd" value=<%=pwd%>><br/>
+이름:<input type="text" name="name" value=<%=name%>><br/>
+성별:<input type="radio" value="man" name="gender"
+<%=gender.equals("man") ? "checked" : "" %>>남자
+<input type="radio" value="woman" name="gender"
+<%=gender.equals("man") ? "checked" : "" %>>여자<br/>
+취미:
+<input type="checkbox" value="운동 " name="hobby"
+<%=hobby.indexOf("운동") >= 0 ? "checked":"" %>>운동
+<input type="checkbox" value="영화" name="hobby"
+<%=hobby.indexOf("영화") >= 0 ? "checked":"" %>>영화
+<input type="checkbox" value="여행 " name="hobby"
+<%=hobby.indexOf("여행") >= 0 ? "checked":"" %>>여행
+<input type="checkbox" value="게임" name="hobby"
+<%=hobby.indexOf("게임") >= 0 ? "checked":"" %>>게임
+<input type="checkbox" value="독서" name="hobby"
+<%=hobby.indexOf("독서") >= 0 ? "checked":"" %>>독서
+<input type="checkbox" value="낚시 " name="hobby"
+<%=hobby.indexOf("낚시") >= 0 ? "checked":"" %>>낚시<br/>
+<input type="submit" value="보내기"/> 
+<input type="reset" value="다시입력"/>
+
+</form>
+
+
+</html>

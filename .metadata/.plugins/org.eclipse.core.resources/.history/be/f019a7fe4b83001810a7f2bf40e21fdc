@@ -1,0 +1,14 @@
+package com.spring.miracom;
+
+public class Printer {
+	String name;
+	public Printer(String name) {
+		this.name = name;
+	}
+	public String getInfo() {
+		return name + "헬로";
+			
+	}
+	
+	
+}

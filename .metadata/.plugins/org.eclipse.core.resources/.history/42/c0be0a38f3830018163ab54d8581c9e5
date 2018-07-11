@@ -1,0 +1,9 @@
+package com.spring.miracom;
+
+public class MemberService {
+	private MemberDAO dao;
+	public void insert(MemberVO member) {
+		
+	}
+
+}

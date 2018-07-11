@@ -1,0 +1,14 @@
+package com.spring.miracom;
+
+public class CarTestService {
+	private Car car;
+	public CarTestService(Car car){
+		this.car = car;
+	}
+	public void park() {
+		System.out.print("===================");
+		System.out.print(car.getInfo());
+	}
+
+
+}
